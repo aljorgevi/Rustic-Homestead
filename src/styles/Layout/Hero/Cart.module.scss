@@ -1,0 +1,67 @@
+@import '../../variables';
+@import '../../breakpoints';
+
+.gb_container {
+  padding: 80px 20px 120px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  // height: 622px;
+  @include breakpoint-up(tablet) {
+    padding: 120px 20px;
+  }
+}
+
+.Cart__Wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  @include breakpoint-up(desktop) {
+    justify-content: unset;
+    margin-left: -50px;
+    padding-right: 300px;
+  }
+  @include breakpoint-up(xldesktop) {
+    justify-content: unset;
+    margin-left: 0px;
+    padding-right: 100px;
+  }
+  &--Width {
+    width: 100%;
+    @include breakpoint-up(desktop) {
+      width: 75%;
+    }
+    @include breakpoint-up(xldesktop) {
+      width: 58%;
+      margin-right: 400px;
+    }
+  }
+}
+
+.Cart {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: $bg-primary;
+  border-width: 0 2px 0 0;
+  border-style: solid;
+  border-color: black;
+  &__Content {
+    padding: 3rem 3rem 1rem;
+
+    @include breakpoint-up(desktop) {
+      padding: 4rem 4rem 2rem;
+    }
+    @include breakpoint-up(xldesktop) {
+      padding: 5rem 5rem 3rem 0.2rem;
+    }
+    h1 {
+      font-size: 4.4rem;
+      margin-bottom: 1rem;
+      color: #2e3d4d;
+    }
+    p {
+      font-size: 2rem;
+    }
+  }
+}

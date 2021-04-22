@@ -1,0 +1,27 @@
+@import '../../breakpoints';
+
+.AvailabilityCard {
+  height: 878px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  @include breakpoint-up(phone) {
+    height: 760px;
+  }
+  @include breakpoint-up(tablet) {
+    height: 610px;
+  }
+  @include breakpoint-up(xltablet) {
+    height: 699px;
+  }
+  @include breakpoint-up(desktop) {
+    height: 642px;
+  }
+  @include breakpoint-up(laptop) {
+    height: 609px;
+  }
+}
+
+.gb-inside-container {
+  padding: 0px 0 40px 0;
+}

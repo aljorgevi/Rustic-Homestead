@@ -1,0 +1,16 @@
+@import '../../breakpoints';
+@import '../../variables';
+
+.HeaderMenu {
+  @include breakpoint-down(tablet) {
+    display: none;
+  }
+
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  > p {
+    font-size: 2rem;
+    margin-left: 2.2rem;
+  }
+}
