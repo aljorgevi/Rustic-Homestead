@@ -7,13 +7,13 @@ import CabinCardPuertoMontt from './CabinCardPuertoMontt';
 
 export default function CabinsList() {
   return (
-    <SectionWrapper>
+    <div className="container-fluid px-4">
       <div className="row">
         <CabinCardLenca />
         <CabinCardPuertoMontt />
         <CabinCardHueyusca />
         <CabinCardBariloche />
       </div>
-    </SectionWrapper>
+    </div>
   );
 }

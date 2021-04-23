@@ -3,7 +3,7 @@
 .CabinCardHueyusca {
   display: flex;
   flex-direction: column;
-  min-height: 422px;
+  min-height: $cart-md-size;
   background-color: #2e3d4d;
   position: relative;
   overflow: hidden;
@@ -30,7 +30,7 @@
 }
 
 .CabinCardHueyusca__content {
-  padding: 160px 20px;
+  padding: 225px 20px;
   z-index: 1;
   position: relative;
   h3 {

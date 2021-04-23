@@ -6,7 +6,7 @@ export default function CabinCardPuertoMontt() {
     <div className="col-12 col-md-6 mb-3">
       <div className={style.CabinCardPuertoMontt}>
         <div className={style.CabinCardPuertoMontt__content}>
-          <h3>Departamento Studio, Puerto Montt</h3>
+          <h3>Studio, Puerto Montt</h3>
           <div className={style.CabinCardPuertoMontt__button}>
             <a className="btn-outline" href="!#">
               Ver Más

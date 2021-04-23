@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import style from '../../../styles/Layout/Services/ServicesCabin.module.scss';
 
 export default function ServicesCabin() {
@@ -8,9 +9,9 @@ export default function ServicesCabin() {
         <div className={style.ServicesCabin__content}>
           <h3>Cabañas</h3>
           <div className={style.ButtonWrapper}>
-            <a className="btn-outline" href="!#">
+            <Link className="btn-outline" to="/cabins">
               Ver Más
-            </a>
+            </Link>
           </div>
         </div>
       </div>
