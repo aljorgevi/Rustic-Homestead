@@ -1,24 +1,25 @@
 import React from 'react';
 import style from '../../../styles/Layout/Hero/Cart.module.scss';
+import SectionWrapper from '../../UI/SectionWrapper';
 
 export default function Cart() {
   return (
-    <div className="gb-inside-container">
+    <SectionWrapper>
       <div className={style.Cart__Wrapper}>
         <div className={style['Cart__Wrapper--Width']}>
           <div className={style.Cart}>
             <div className={style.Cart__Content}>
-              <h1>Puerto Montt, Region de los Lagos</h1>
-              <hr className="hr hr-xl" />
+              <h1>Puerto Montt, Región de los Lagos</h1>
+              <hr className="hr w-100" />
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
-                possimus?
+                Somos una pequeña cabaña en el Sur de Chile, ofrecemos
+                hospedaje, leña y próximamente tinaja.
               </p>
             </div>
           </div>
           ;
         </div>
       </div>
-    </div>
+    </SectionWrapper>
   );
 }

@@ -1,0 +1,27 @@
+.SocialMedia {
+  a {
+    margin: 0 1rem;
+    svg {
+      font-size: 3rem;
+      opacity: 0.75;
+      transform-origin: 50% 50%;
+      transition: opacity 0.2s ease, transform 0.2s ease;
+      &:hover {
+        opacity: 1;
+        transform: scale(1.2) rotate(360deg);
+      }
+    }
+  }
+}
+
+.Instagram {
+  color: #c12fa2;
+}
+
+.Facebook {
+  color: rgb(24, 119, 242);
+}
+
+.Whatsapp {
+  color: rgb(0, 154, 51);
+}

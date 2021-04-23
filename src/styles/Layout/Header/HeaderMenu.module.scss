@@ -9,8 +9,15 @@
   margin-left: auto;
   display: flex;
   justify-content: center;
-  > p {
-    font-size: 2rem;
+  > li {
+    font-size: 1.6rem;
     margin-left: 2.2rem;
+    a:hover,
+    a:active,
+    a.active {
+      // color: #95bcf0;
+      padding-bottom: 0.6rem;
+      border-bottom: 4px solid $primary-color;
+    }
   }
 }

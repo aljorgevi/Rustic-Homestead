@@ -1,9 +1,9 @@
 @import '../../variables';
 
-.ServicesRightWrapper {
+.CabinCardHueyusca {
   display: flex;
   flex-direction: column;
-  height: 422px;
+  min-height: 422px;
   background-color: #2e3d4d;
   position: relative;
   overflow: hidden;
@@ -14,7 +14,7 @@
         rgba($primary-gradient, 0.1),
         rgba($primary-gradient, 0)
       ),
-      url('../../../assets/images/tinaja.jpg') center;
+      url('../../../assets/images/Cabins/hueyusca.jpg') center;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -29,7 +29,7 @@
   }
 }
 
-.ServicesRight__content {
+.CabinCardHueyusca__content {
   padding: 160px 20px;
   z-index: 1;
   position: relative;
@@ -42,7 +42,7 @@
   }
 }
 
-.ButtonWrapper {
+.CabinCardHueyusca__button {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;

@@ -1,6 +1,6 @@
 import React from 'react';
 import style from '../../../styles/Layout/Hero/Hero.module.scss';
-import hero from '../../../assets/images/img01.jpg';
+import hero from '../../../assets/images/rustic.jpg';
 import Cart from './Cart';
 
 export default function Hero() {

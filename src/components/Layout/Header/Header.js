@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import HeaderBurger from './HeaderBurger';
 import HeaderMenu from './HeaderMenu';
 import logo from '../../../assets/images/logo.png';
@@ -12,9 +13,9 @@ export default function Header() {
   };
   return (
     <nav className={`${style.Header} container`}>
-      <div className={style.Header__logo}>
+      <Link to="/" className={style.Header__logo}>
         <img src={logo} alt="logo" />
-      </div>
+      </Link>
 
       <HeaderBurger handleOnClick={handleOnClick} isOpen={isOpen} />
 

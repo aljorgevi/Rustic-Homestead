@@ -1,0 +1,10 @@
+@import '../breakpoints';
+
+.img-form {
+  margin: 5rem auto;
+  display: flex;
+  @include breakpoint-up(xltablet) {
+    margin: 0 auto;
+    max-height: 600px;
+  }
+}

@@ -1,9 +1,9 @@
 @import '../../variables';
 
-.ServicesLeftWrapper {
+.CabinCardPuertoMontt {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  min-height: 422px;
   background-color: #2e3d4d;
   position: relative;
   overflow: hidden;
@@ -14,7 +14,7 @@
         rgba($primary-gradient, 0.1),
         rgba($primary-gradient, 0)
       ),
-      url('../../../assets/images/firewood.jpg') center;
+      url('../../../assets/images/Cabins/puertomontt.jpg') center;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -29,7 +29,7 @@
   }
 }
 
-.ServicesLeft__content {
+.CabinCardPuertoMontt__content {
   padding: 160px 20px;
   z-index: 1;
   position: relative;
@@ -42,7 +42,7 @@
   }
 }
 
-.ButtonWrapper {
+.CabinCardPuertoMontt__button {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;

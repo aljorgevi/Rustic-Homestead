@@ -1,0 +1,15 @@
+@import '../../variables';
+
+.Footer {
+  padding: 0 20px;
+}
+
+.FooterWrapper {
+  padding: 60px 20px;
+  text-align: center;
+  margin: 60px 0;
+  border-width: 1px 0;
+  border-style: solid;
+  border-color: $primary-color;
+  align-items: center;
+}
