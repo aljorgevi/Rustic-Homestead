@@ -2,22 +2,83 @@
 @import '../../variables';
 
 .HeaderMenu {
-  @include breakpoint-down(tablet) {
-    display: none;
+  @include breakpoint-up(tablet) {
+    visibility: visible;
   }
+  visibility: hidden;
+  &.open {
+    visibility: visible;
+  }
+}
 
-  margin-left: auto;
+.HeaderMenu__items {
   display: flex;
   justify-content: center;
-  > li {
-    font-size: 1.6rem;
-    margin-left: 2.2rem;
-    a:hover,
-    a:active,
-    a.active {
-      // color: #95bcf0;
-      padding-bottom: 0.6rem;
-      border-bottom: 4px solid $primary-color;
+  align-items: center;
+  @include breakpoint-up(tablet) {
+    visibility: visible;
+  }
+}
+
+.HeaderMenu__item {
+  font-size: 1.6rem;
+  margin-left: 2.2rem;
+  a:hover,
+  a:active,
+  a.active {
+    padding-bottom: 0.6rem;
+    border-bottom: 4px solid $primary-color;
+  }
+}
+
+@include breakpoint-down(tablet) {
+  .HeaderMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    opacity: 0.98;
+  }
+  .HeaderMenu__items {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    background: #272727;
+    list-style-type: none;
+    padding-right: 4rem;
+    transform: translateY(-100%);
+    @include transition-ease;
+    &.open {
+      transform: translateY(0);
     }
+  }
+  .HeaderMenu__item {
+    transform: translateX(100vw);
+    @include transition-ease;
+    &.open {
+      transform: translateX(0);
+    }
+  }
+  .HeaderMenu__link {
+    color: white !important;
+    display: inline-block;
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding: 2rem 0;
+    font-weight: 300;
+    @include transition-ease;
+    &:hover {
+      color: red;
+      text-decoration: none;
+    }
+  }
+}
+
+@for $i from 1 through 5 {
+  .HeaderMenu__item:nth-child(#{$i}) {
+    transition-delay: ($i * 0.1s) + 0.15s;
   }
 }

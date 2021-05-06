@@ -24,7 +24,10 @@ $breakpoints-up: (
 );
 
 $breakpoints-down: (
+  'xlphone': '499px',
   'tablet': '639px',
+  'xltablet': '768px',
+  'lg': '991px',
   'desktop': '1023px',
   'xldesktop': '1399px',
 );

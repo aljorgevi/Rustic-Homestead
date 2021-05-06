@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import style from '../../../styles/Layout/Services/ServicesTinaja.module.scss';
 
 export default function ServicesTinaja() {
@@ -6,11 +7,11 @@ export default function ServicesTinaja() {
     <div className="col-12 col-md-6 my-2">
       <div className={style.ServicesTinajaWrapper}>
         <div className={style.ServicesTinaja__content}>
-          <h3>Tinajas</h3>
+          <h3>Tinaja</h3>
           <div className={style.ButtonWrapper}>
-            <a className="btn-outline" href="!#">
+            <Link className="btn-outline" to="/tinaja">
               Ver Más
-            </a>
+            </Link>
           </div>
         </div>
       </div>

@@ -1,0 +1,24 @@
+.FireWoodBody {
+  text-align: center;
+  > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  img {
+    max-width: 450px;
+  }
+  p {
+    font-size: 2rem;
+  }
+}
+
+.FireWoodBody__title {
+  margin: 6rem 0;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.FireWoodBody__advertising {
+  padding: 8rem 0;
+}

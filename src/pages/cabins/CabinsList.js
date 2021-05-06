@@ -1,9 +1,8 @@
 import React from 'react';
-import SectionWrapper from '../../components/UI/SectionWrapper';
-import CabinCardBariloche from './CabinCardBariloche';
+import CabinCardBariloche from './Bariloche/CabinCardBariloche';
 import CabinCardHueyusca from './CabinCardHueyusca';
-import CabinCardLenca from './CabinCardLenca';
-import CabinCardPuertoMontt from './CabinCardPuertoMontt';
+import CabinCardLenca from './Lenca/CabinCardLenca';
+import CabinCardPuertoMontt from './PuertoMontt/CabinCardPuertoMontt';
 
 export default function CabinsList() {
   return (
@@ -11,8 +10,8 @@ export default function CabinsList() {
       <div className="row">
         <CabinCardLenca />
         <CabinCardPuertoMontt />
-        <CabinCardHueyusca />
-        <CabinCardBariloche />
+        {/* <CabinCardHueyusca /> */}
+        {/* <CabinCardBariloche /> */}
       </div>
     </div>
   );

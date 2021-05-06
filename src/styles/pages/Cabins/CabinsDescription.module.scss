@@ -1,4 +1,28 @@
+@import '../../variables';
+
 .CabinsDescription {
   text-align: center;
   font-size: 1.6rem;
+  > div {
+    margin-top: 5rem;
+    text-align: left;
+  }
+}
+
+.Lenca {
+  h3 span {
+    color: $primary-color;
+  }
+}
+
+.PuertoMontt {
+  h3 span {
+    color: $primary-color;
+  }
+}
+
+.Bariloche {
+  h3 span {
+    color: $primary-color;
+  }
 }

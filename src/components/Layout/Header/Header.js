@@ -19,7 +19,7 @@ export default function Header() {
 
       <HeaderBurger handleOnClick={handleOnClick} isOpen={isOpen} />
 
-      <HeaderMenu />
+      <HeaderMenu handleOnClick={handleOnClick} isOpen={isOpen} />
     </nav>
   );
 }

@@ -1,29 +1,30 @@
 @import '../../breakpoints';
 @import '../../variables';
+@import '../../';
 
-.menu-btn {
+.HeaderBurger {
   position: absolute;
   z-index: 1;
   right: 3.5rem;
-  top: 2.8rem;
+  top: 4.5rem;
   height: 20px;
   width: 28px;
   cursor: pointer;
-  transition: all 0.5s ease-in-out;
+  @include transition-ease;
   @include breakpoint-up(tablet) {
     display: none;
   }
   @include breakpoint-up(phone) {
     right: 5em;
   }
-  &__burger {
+  > span {
     position: absolute;
     right: 1rem;
     top: 1rem;
     width: 28px;
     height: 3px;
     background: black;
-    transition: all 0.5s ease-in-out;
+    @include transition-ease;
     &::before {
       content: '';
       position: absolute;
@@ -32,7 +33,7 @@
       width: 28px;
       height: 3px;
       background: black;
-      transition: all 0.5s ease-in-out;
+      @include transition-ease;
     }
     &::after {
       content: '';
@@ -42,7 +43,7 @@
       width: 21px;
       height: 3px;
       background: black;
-      transition: all 0.5s ease-in-out;
+      @include transition-ease;
     }
     &.open {
       transform: rotate(720deg);
@@ -58,4 +59,9 @@
       }
     }
   }
+}
+
+.MenuBurgerPosition {
+  @include transition-ease;
+  position: fixed !important;
 }

@@ -1,0 +1,21 @@
+@import '../../variables';
+@import '../../breakpoints';
+
+.TinajaHero {
+  width: 100%;
+  height: 408px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+    > h1 {
+      text-align: center;
+      font-size: 3rem;
+      color: $bg-primary;
+    }
+  }
+}

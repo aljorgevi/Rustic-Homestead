@@ -9,3 +9,7 @@ $primary-gradient: #272727;
 
 $cart-md-size: 550px;
 $cart-sm-size: 422px;
+
+@mixin transition-ease {
+  transition: all 0.5s ease-in-out;
+}
