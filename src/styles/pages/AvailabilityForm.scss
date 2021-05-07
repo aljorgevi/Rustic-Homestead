@@ -11,6 +11,8 @@
 
 .form-control {
   margin-bottom: 1rem;
+  position: relative;
+  z-index: 90;
 }
 
 .form-control input,
@@ -37,6 +39,7 @@
   display: flex;
   column-gap: 1rem;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .control-group .form-control {
