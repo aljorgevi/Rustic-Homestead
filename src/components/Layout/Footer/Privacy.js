@@ -9,7 +9,7 @@ export default function Privacy() {
       <div className="row align-center">
         <div className="col-12 col-md-6 ">
           <div className={style.PrivacyLeft}>
-            <p>WWW.RUSTIC_HOMESTEAD_CHILE.COM</p>
+            <p>www.rustichomesteadchile.com</p>
           </div>
         </div>
         <div className="col-12 col-md-6">

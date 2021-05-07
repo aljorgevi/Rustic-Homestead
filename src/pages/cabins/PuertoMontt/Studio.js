@@ -5,6 +5,7 @@ import style from '../../../styles/pages/Cabins/PuertoMontt/Studio.module.scss';
 import Reviews from '../Reviews';
 
 export default function Studio() {
+  // eslint-disable-next-line
   const [data, setData] = useState(testData);
   return (
     <Fragment>

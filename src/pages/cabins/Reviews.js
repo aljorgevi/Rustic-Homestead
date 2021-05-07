@@ -199,7 +199,7 @@ function Reviews() {
                   <img src={image02} alt={testimonials[1].name} />
                 </li>
                 <li className={state.isActive3 ? 'active' : ''}>
-                  <img src={image03} />
+                  <img src={image03} alt="reviews" />
                 </li>
               </ul>
             </div>

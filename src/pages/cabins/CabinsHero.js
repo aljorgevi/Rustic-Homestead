@@ -1,5 +1,5 @@
 import React from 'react';
-import CabinsHeroImg from '../../assets/images/Cabins/cabin-hero.jpg';
+import CabinsHeroImg from '../../assets/images/Cabins/cabin-hero2.jpg';
 import style from '../../styles/pages/Cabins/CabinsHero.module.scss';
 
 export default function CabinsHero() {

@@ -11,7 +11,7 @@ export default function TinajaBody() {
         <h1>¡Esta página está en construcción, próximamente más novedades! </h1>
 
         <div className="col-12 col-md-6 order-0">
-          <img className="img-fluid" src={img0} alt="firewood image" />
+          <img className="img-fluid" src={img0} alt="firewood" />
         </div>
         <div className="col-12 col-md-6 order-1 ">
           <p>
@@ -26,10 +26,10 @@ export default function TinajaBody() {
           </p>
         </div>
         <div className="col-12 col-md-6 order-2 order-md-3">
-          <img className="img-fluid" src={img01} alt="firewood image" />
+          <img className="img-fluid" src={img01} alt="firewood" />
         </div>
         <div className="col-12 col-md-6 order-4 ">
-          <img src={img02} alt="firewood image" />
+          <img src={img02} alt="firewood" />
         </div>
         <div className="col-12 col-md-6 order-5">
           <p>

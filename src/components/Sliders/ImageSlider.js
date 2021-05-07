@@ -34,7 +34,7 @@ const ImageSlider = ({ slides }) => {
             {index === current && (
               <img
                 src={`/images/${slide.image}`}
-                alt="travel image"
+                alt="slider"
                 className="imageslider"
               />
             )}

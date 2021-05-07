@@ -8,7 +8,7 @@ export default function MailTo() {
   };
   return (
     <div className="col-12 col-md-4">
-      <a to="mailto" onClick={handleOnClick} className="footer-text">
+      <a href={mailto} onClick={handleOnClick} className="footer-text">
         Email Us
       </a>
     </div>

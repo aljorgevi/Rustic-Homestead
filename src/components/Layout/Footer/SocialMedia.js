@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { FaInstagram, FaFacebook, FaWhatsapp } from 'react-icons/fa';
 import style from '../../../styles/Layout/Footer/SocialMedia.module.scss';
 

@@ -93,7 +93,7 @@ export default function AvailabilityForm() {
   const expressions = {
     user: /^[a-zA-ZÀ-ÿ\s]{2,40}$/, // Letras y espacios, pueden llevar acentos.
     email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-    message: /^[a-zA-Z0-9_,-\s]{4,1000}$/, // Letras, numeros, guion y guion_bajo
+    message: /^[a-zA-Z0-9_,.-\s]{4,1000}$/, // Letras, numeros, guion y guion_bajo
   };
 
   if (isLoading) {

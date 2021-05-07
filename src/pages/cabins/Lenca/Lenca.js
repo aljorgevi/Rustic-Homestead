@@ -4,6 +4,7 @@ import SliderComponent from '../../../components/Sliders/SliderComponent';
 import style from '../../../styles/pages/Cabins/Lenca/Lenca.module.scss';
 
 export default function Lenca() {
+  // eslint-disable-next-line
   const [data, setData] = useState(testData);
   return (
     <div className={`${style.Lenca} container text-center my-5`}>
