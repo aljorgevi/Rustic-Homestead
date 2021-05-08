@@ -37,6 +37,7 @@ export default function TextArea({
           {labelName}
         </Label>
         <textarea
+          name={inputName}
           className="textarea"
           rows="3"
           type={inputType}

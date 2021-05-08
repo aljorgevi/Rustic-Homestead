@@ -38,6 +38,7 @@ export default function InputComponent({
           {labelName}
         </Label>
         <Input
+          name={inputName}
           type={inputType}
           id={inputName}
           placeholder={placeholder}

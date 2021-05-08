@@ -46,8 +46,9 @@ export default function AvailabilityForm() {
   //   fetchData();
   // };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
     if (
       user.isValid === 'true' &&
       email.isValid === 'true' &&
@@ -62,14 +63,15 @@ export default function AvailabilityForm() {
       return;
     }
 
+    setIsLoading(true);
+
     const fetchData = async () => {
-      setIsLoading(true);
       try {
         await emailjs
           .sendForm(
             'service_d1wtsen',
             'template_si5u79x',
-            event.target,
+            e.target,
             'user_L0k7Rxy2vxCO7YiqDRJ5O'
           )
           .then(() => {
@@ -93,7 +95,7 @@ export default function AvailabilityForm() {
   const expressions = {
     user: /^[a-zA-ZÀ-ÿ\s]{2,40}$/, // Letras y espacios, pueden llevar acentos.
     email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-    message: /^[a-zA-Z0-9_,.-\s]{4,1000}$/, // Letras, numeros, guion y guion_bajo
+    message: /^[a-zñA-Z0-9_,!.-\s]{4,1000}$/, // Letras, numeros, guion y guion_bajo
   };
 
   if (isLoading) {
@@ -147,7 +149,7 @@ export default function AvailabilityForm() {
               message.isValid === 'true'
             }
           >
-            <p>
+            <p className="Warning-message">
               <FontAwesomeIcon icon={faExclamationTriangle} />
               <b>Error:</b> Por favor rellena el formulario correctamente.
             </p>
@@ -156,7 +158,6 @@ export default function AvailabilityForm() {
 
         <div className="form-actions">
           <button className="btn-form">Enviar</button>
-          {/* {formIsValid === true && <p>Formulario enviado exitosamente!</p>} */}
         </div>
       </form>
     </div>

@@ -1,0 +1,19 @@
+@import '../../breakpoints';
+
+.NotFound {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.NotFound__link {
+  margin-top: 5rem;
+  @include breakpoint-up(desktop) {
+    height: 80vh;
+  }
+
+  img {
+    height: 100%;
+    max-width: 100%;
+  }
+}
